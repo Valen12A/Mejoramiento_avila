@@ -20,7 +20,7 @@ while True:
         if opcion==0:
             break
         elif opcion == 1:
-            Paciente.registrarCita(Paciente.citas)
+            Paciente.registrarCita(Paciente.lcitas)
         elif opcion == 2:
             Paciente.consultarCita()
         elif opcion == 3:
