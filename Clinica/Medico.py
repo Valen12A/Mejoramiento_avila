@@ -22,5 +22,5 @@ def consultarCitasAgendadas ():
 
 
 
-def getMedico(self):
-        return f'{self.__nombre},{self.__documento}, {self.__disponivilidad}, {self.__consultorio}'
+def mostrarMedico(self):
+        return f'{self.__nombre},{self.__documento}, {self.__disponibilidad}, {self.__consultorio}'

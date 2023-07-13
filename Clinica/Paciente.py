@@ -13,7 +13,7 @@ class Paciente(Cita):
      
 
 
-def registrarCita(Paciente):
+def registrarCita (Paciente):
      nombrePaciente = input("Ingresar el nombre del paciente: ")
      tipoDocumento = input("Ingresar el tipo de documento: ")
      documento = int(input("Ingresar el numero de documento: "))
@@ -83,7 +83,7 @@ def seleccionarEspecialidad(Paciente):
 
      
 
-def getPaciente(self):
+def mostarPaciente(self):
         return f'{self.__nombre},{self.__tipoDocumento},{self.__documento}'
 
 

@@ -7,6 +7,6 @@ class Cita ():
 
 
 
-def getCita(self):
+def mostarCita(self):
         return f'{self.__facheAgenda}, {self.__motivoConsulta}, {self.__consultorio}, {self.__horarioDisponible}'
         
