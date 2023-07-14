@@ -6,19 +6,18 @@ class Medico(Paciente):
         self.__desponibilidad = disponibilidad
         self.__consultorio = consultorio
 
-def consultarCitasAgendadas ():
-
+    def consultarCitasAgendadas():
         for Paciente.dcitas in Paciente.lcitas:
             buscarCita = input('Ingrese el nombre del paciente que tiene la cita: ')
-            if Paciente.Cit["Nombre del Paciente"] == buscarCita:
-                print("Cita encontrada:")
-                print("Medico: ", Paciente.dcitas["nombreMedico"])
-                print("Nombre del consultorio: ", Paciente.dcitas["nombreConsultorio"])
-                print("motivo de la consulta: ", Paciente.dcitas["motivoConsulta"])
-                print("Fecha de agendación : ", Paciente.dcitas["fechaAgenda"])
+            if Paciente.dcitas ["Nombre del paciente"] == buscarCita:
+                 print("Cita encontrada:")
+                 print("Medico: ", Paciente.dcitas["nombreMedico"])
+                 print("Nombre del consultorio: ", Paciente.dcitas["nombreConsultorio"])
+                 print("motivo de la consulta: ", Paciente.dcitas["motivoConsulta"])
+                 print("Fecha de agendación : ", Paciente.dcitas["fechaAgenda"])
 
             else:
-                print("Cita no encontrada.")    
+                 print("Cita no encontrada.")    
 
 
 

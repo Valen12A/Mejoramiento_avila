@@ -1,7 +1,10 @@
 class Cita ():
-    def __init__(self,fechaAgenda, motivoConsulta,  nombreConsultorio):
-        self.__fechaAgenda = fechaAgenda
-        self.__motivoConsulta =motivoConsulta
+    def __init__(self,diaCita, mesCita, añoCita, horaCita, motivoConsulta,  nombreConsultorio):
+        self.__diaCita = diaCita
+        self.__mesCita = mesCita
+        self.__añoCita = añoCita
+        self.__horaCita = horaCita
+        self.__motivoConsulta = motivoConsulta
         self.__nombreConsultorio = nombreConsultorio
     
 
