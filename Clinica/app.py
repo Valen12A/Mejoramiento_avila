@@ -3,6 +3,7 @@ from Medico import *
 from Cita import *
 
 while True:
+   
     print("__MENU___")
     print("1. Paciente")
     print("2. Medico")
@@ -19,17 +20,16 @@ while True:
         print("4. Seleccionar especialidad")
         
         opcionPaciente = int(input('Elija una opcion del menu paciente : '))
-        
+        print()
         if opcionPaciente == 1:
             Paciente.registrarCita(Paciente.lcitas)
         elif opcionPaciente == 2:
-            Paciente.consultarCita()
+            Paciente.consultarCita(Paciente.lcitas)
         elif opcionPaciente == 3:
             Paciente.eliminarCita()
         elif opcionPaciente == 4:
             Paciente.seleccionarEspecialidad()
-        else:
-            print("Ingresar opcion valida")
+        else:            print("Ingresar opcion valida")
     
     elif opcion != 1 or 3:
         print("__MENU MEDICO__")
