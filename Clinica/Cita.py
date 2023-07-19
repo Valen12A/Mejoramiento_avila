@@ -12,5 +12,5 @@ class Cita ():
 
 
 def mostarCita(self):
-        return f'{self.__facheAgenda}, {self.__motivoConsulta}, {self.__consultorio}, {self.__horarioDisponible}'
+        return f' {self.__nombreMedico}, {self.__diaCita / self.__mesCita / self.__añoCita}, {self.__horaCita}, {self.__motivoConsulta}, {self.__nombreConsultorio}, {self.__horarioDisponible}'
         

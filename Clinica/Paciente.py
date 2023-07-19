@@ -45,7 +45,7 @@ class Paciente(Cita):
     def consultarCita(lcitas):
         print()
         print("___Consulta de Cita___")
-        print()
+
         buscarCita = input("Ingresar el nombre del paciente con el que se registro la cita: ")
         for cita in Paciente.lcitas:
             if buscarCita  == cita["Nombre del paciente: "]:
@@ -59,6 +59,7 @@ class Paciente(Cita):
                 print ("No se encontro una cita con el nombre", buscarCita)
 
     def eliminarCita():
+        print ()
         print("___Eliminación de Cita___")
         for cita in Paciente.lcitas:
           eliminarCita = input("Ingresar el nombre del paciente con el que se registro la cita para eliminarla: ")
@@ -67,6 +68,7 @@ class Paciente(Cita):
                print("¡Cita eliminada con exito!")
      
     def seleccionarEspecialidad():
+     print()
      especialidadesDisponibles = ["Odontologia", "Cardiologia", "Dermatologia", "Neurologia", "Pediatria", "Psicologia", "Ginecologia", "Oftalmologia", "Ortopedia"]
      print("Especialidades disponibles:", especialidadesDisponibles)
      for n, especialidad in enumerate(especialidadesDisponibles):
@@ -85,17 +87,17 @@ class Paciente(Cita):
                 print("Opción inválida")
                 continue
             
-            especialidadSeleccionada = especialidadesDisponibles[opcion - 1]
+            opcion = especialidadesDisponibles[opcion - 1]
             
-            if especialidadSeleccionada in ESeleccionadas:
+            if  opcion in ESeleccionadas:
                 print("Esa especialidad ya ha sido seleccionada")
             else:
-                ESeleccionadas.append(especialidadSeleccionada)
-                print(f"Especialidad '{especialidadSeleccionada}' seleccionada.")
+                ESeleccionadas.append( opcion)
+                print(f"Especialidad seleccionada {opcion}")
                 break
         
         except ValueError:
-            print("Opción inválida. Intenta nuevamente.")
+            print("Opción inválida")
     
      print("Especialidades seleccionadas:")
      for especialidad in ESeleccionadas:

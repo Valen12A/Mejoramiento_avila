@@ -31,7 +31,7 @@ while True:
             Paciente.seleccionarEspecialidad()
         else:            print("Ingresar opcion valida")
     
-    elif opcion != 1 or 3:
+    elif opcion == 2:
         print("__MENU MEDICO__")
         print("1. Consultar cita agendada")
         
@@ -42,7 +42,7 @@ while True:
         else:
             print('Ingresar opcion válida')
     
-    elif opcion != 1 or 2:
+    elif opcion == 3:
         break
     
     else:
